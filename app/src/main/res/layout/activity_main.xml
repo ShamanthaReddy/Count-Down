@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/bg"
     android:layout_width="match_parent"
@@ -25,9 +26,12 @@
         android:id="@+id/relativeLayout">
         <LinearLayout
             android:id="@+id/LinearLayout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
             android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
             android:orientation="horizontal">
             <TextView
                 android:id="@+id/tvhappyevent"
@@ -36,7 +40,7 @@
                 android:paddingLeft="50dp"
                 android:gravity="center"
                 android:singleLine="true"
-                android:text="Merry Christmas 2015!"
+                android:text="Aagama"
                 android:textColor="#fff"
                 android:textSize="24sp"
                 android:textStyle="bold"
@@ -48,6 +52,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/counter"
                 android:gravity="center"
+
                 android:orientation="vertical" >
 
                 <TextView
@@ -58,7 +63,7 @@
                     android:gravity="center"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#4a0000"
-                    android:textSize="35dp"
+                    android:textSize="30dp"
                     android:textStyle="bold" />
                 <TextView
                     android:id="@+id/txt_TimerDay"
@@ -87,7 +92,7 @@
                     android:gravity="center"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#4a0000"
-                    android:textSize="35dp"
+                    android:textSize="30dp"
                     android:textStyle="bold" />
                 <TextView
                     android:id="@+id/txt_TimerHour"
@@ -116,7 +121,7 @@
                     android:gravity="center"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#4a0000"
-                    android:textSize="35dp"
+                    android:textSize="30dp"
                     android:textStyle="bold" />
                 <TextView
                     android:id="@+id/txt_TimerMinute"
@@ -145,7 +150,7 @@
                     android:gravity="center"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#4a0000"
-                    android:textSize="35dp"
+                    android:textSize="30dp"
                     android:textStyle="bold" />
                 <TextView
                     android:id="@+id/txt_TimerSecond"
@@ -185,7 +190,35 @@
         android:textColor="#000000"
         android:textSize="50dp"
         android:textStyle="italic|bold" />
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/angry_btn"
 
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#330C4D"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text=" Explore "
+
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.816"
+        android:layout_marginLeft="8dp" />
+</android.support.constraint.ConstraintLayout>
 
 </RelativeLayout>

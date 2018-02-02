@@ -2,4 +2,5 @@
     <string name="app_name">Count Down</string>
     <string name="countdown">There are only</string>
     <string name="countdownleft">To start the exciting Event!!!</string>
+    <string name="explore">Explore</string>
 </resources>
